@@ -1,0 +1,2 @@
+#! /bin/bash
+time ./PA9 /s/bach/k/under/sgthun/cs253/PA/PA9/testCases/Test_Cases/in/reference /s/bach/k/under/sgthun/cs253/PA/PA9/testCases/Test_Cases/in/library 1 6.85

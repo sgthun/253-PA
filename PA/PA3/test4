@@ -1,0 +1,98 @@
+My Project
+Main Page
+Related Pages
++Files
+CS270
+Programming Assignment P3 - Bit Fields in C
+
+Programming due Sunday, September 10 at 10:00pm, late submission until 11:59pm. This assignment has four objectives:
+to write a C program that manipulates the bits of integer values,
+to learn the C language operators for binary numbers,
+to build a more complex C program with multiple files,
+to see if you can follow directions!
+About The Assignment
+
+This assignment will serve as the basis for future assignments. You will learn how to use the C language operators for binary and (&), binary or (|), and binary not (~). You will also use the C language bit shift operators (<< and >>).
+The goal of the assignment is to implement a small C library (5 functions) that enables getting and setting bits and fields in a binary number. This is especially useful for playing around with numerical representations, for example you could build a new floating point number from scratch by setting the sign bit, exponent, and mantissa, or you could analyze an existing floating point number by extracting the same fields. We will use it later in this class for understanding number representations and for converting LC3 assembly code into machine code. To get started, read the Getting Started section below and then study the documentation for field.h in the Files tab to understand the details of the assignment.
+
+Getting Started
+
+Perform the following steps
+Create a directory for this assignment. A general scheme might be to have a directory for each CS class you are taking and beneath that, a directory for each assignment. The name of the directory is arbitrary, but you may find it useful to name it for the assignment (e.g. P3).
+Copy the four files into this directory. It is easiest to right click on the link, and use Save Link As ... to save the file in your directory. While you may use copy/paste to save the file, it may convert the required tabs of Makefile into spaces.
+field.h (do not modify)
+field.c (complete this file)
+Makefile (do not modify)
+testField.c (do not modify)
+Open a terminal and make sure you are in the directory you created. The cd command can be used for this.
+In the terminal, rename Makefile.txt as Makefile, and run make. You should see the following output:
+
+    $ mv Makefile.txt Makefile
+    $ make
+    c11 -g -Wall -c testField.c
+    c11 -g -Wall -c field.c
+    c11 -g testField.o field.o -o testField
+    
+In the terminal type ./testField and read how to run the the program.
+In the terminal type ./testField bin 11259375 and you should see the output:
+
+    dec: 11259375  hex: 0xABCDEF  bin: 0000-0000-1010-1011-1100-1101-1110-1111
+    
+You now have a functioning program. All the commands work, however, only bin will produce correct results at this point.
+
+Computing Bit Masks
+
+In this assignment you will need to compute masks whose values (in binary) have a variable number of consecutive 1's. To help you understand how to do this, the followings exercise may help. This is a pencil and paper exercise. You are going to create a table with multiple rows and columns.
+The 1st column will be labeled N and will contain the numbers 0, 1, 2, 3, 4, 5, ... This range is probably sufficient, but you may want to go higher.
+The 2nd column will be a string of charaters starting with a 1 and followed by exactly N 0's.
+The 3rd column will be the number obtained by converting the binary digits in column 2 to a number.
+The 4th column will be a string of characters beginning with a zero and followed by exactly N 1's.
+The 5th column will be the number obtained by converting the binary digits in column 4 to a number.
+Now find a relationship between columns 3 and 5. Now consider the new C operators you are learning about and see if you can find a simple way to compute column 2 using the number 1, an operator and N. Once you understand this, the remainder of the assignment is much simpler.
+Completing the Code
+
+Before attempting to write any of the functions of field.c, study the documentation in found in the files tab. Plan what you need to do before writing code.
+The best way to complete the code is to follow a write/compile/test sequence. Do not attempt to write everything at once. Rather choose one function and do the following steps:
+
+Write one of the functions in field.c using your favorite editor.
+Save your changes and recompile field.c using make.
+You may find it convenient to work with both a terminal and editor window at the same time.
+Repeat steps 1 and 2 until there are no errors or warnings.
+Test the function you have been working on using the command line.
+Warning: Do not attempt to move on until you complete and thoroughly test a function!
+Repeat steps 1 thru 7 for the remaining functions.
+Relax, you are done with your assignment!
+Specifications
+
+Your program must meet the following specifications:
+Work on your own, as always.
+The name of the source code file must be exactly field.c.
+Name the file exactly - upper and lower case matters!
+Comments at the top as shown above.
+Make sure your code runs on machines in the COMCS 120 lab.
+Submit your program to the Checkin tab as you were shown in the recitation.
+Read the syllabus for the late policy.
+We will be checking programs for plagiarism, so please don't copy from anyone else.
+Grading Criteria
+
+100 points for perfect submission.
+0 points for no submission, will not compile, submitted class file, etc.
+Each test can make multiple calls to the function being tested, with different values.
+Preliminary Tests
+testCompile: checks that program compiles. (0 points)
+test1: calls testField with getBit to check the getBit function. (10 points)
+test2: calls testField with setBit to check the setBit function. (5 points)
+test3: calls testField with clearBit to check the clearBit function. (5 points)
+test4: calls testField with get to check the getField function, with isSigned false. (10 points)
+test5: calls testField with get to check the getField function, with isSigned true. (10 points)
+test6: calls testField with set to check the setField function. (10 points)
+test7: calls testField with fits to check the fieldFits function, with isSigned false. (5 points)
+test8: calls testField with fits to check the fieldFits function, with isSigned true. (5 points)
+Final Tests
+test9: further testing of the getField function. (5 points)
+test10: further testing of the setField function. (5 points)
+test11: further testing of the fieldFits function. (10 points)
+Final grading includes the preliminary tests.
+Submit the single file field.c to the Checkin tab on the course website, as you were shown in the recitation, and read the syllabus for the late policy (if necessary).
+© 2017 CS270 Colorado State University. All Rights Reserved.
+Generated by   doxygen 1.8.13

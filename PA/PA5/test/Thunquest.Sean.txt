@@ -1,0 +1,33 @@
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from portAlg
+[ RUN      ] portAlg.step1
+[       OK ] portAlg.step1 (2 ms)
+[----------] 1 test from portAlg (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (2 ms total)
+[  PASSED  ] 1 test.
+#include <Stemmer.h>
+#include <gtest/gtest.h>
+
+
+TEST(portAlg, step1){
+	Stemmer ss;
+	string t = "\'people\'s";
+	ss.getStem(t);
+	EXPECT_EQ("peopl",t );
+
+}
+
+// TEST(portAlg, step2){
+// 	Stem ss;
+// 	string t = "abcsses";
+// 	ss.step2(t);
+// 	EXPECT_EQ("abcss",t);
+// }
+int main(int argc, char** argv){
+	// :: means global scope
+	::testing::InitGoogleTest(&argc,argv);
+	return RUN_ALL_TESTS();
+}

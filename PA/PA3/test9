@@ -1,0 +1,2 @@
+Special pattern characters are characters (or sequences of characters) that have a special meaning when they appear in a regular expression pattern, either to represent a character that is difficult to express in a string, or to represent a category of characters. Each of these special pattern characters is matched in the target sequence against a single character (unless a quantifier specifies otherwise).
+52.6 34.8 .5 a. .e 54.!? 4,5 ,3 3, ... ., !!? a! ..!efg 7,7.7,7 strange. 'Herb will be cool. ,.999 8,8,8

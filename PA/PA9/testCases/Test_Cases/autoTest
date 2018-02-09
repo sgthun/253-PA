@@ -1,0 +1,2 @@
+#! /bin/bash
+./PA9 testCases/Test_Cases/in/reference testCases/Test_Cases/in/library 1 6.85

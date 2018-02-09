@@ -1,0 +1,18 @@
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from portAlg
+[ RUN      ] portAlg.step1
+[       OK ] portAlg.step1 (4 ms)
+[ RUN      ] portAlg.step2
+[       OK ] portAlg.step2 (2 ms)
+[ RUN      ] portAlg.step3
+[       OK ] portAlg.step3 (1 ms)
+[ RUN      ] portAlg.step4
+[       OK ] portAlg.step4 (2 ms)
+[ RUN      ] portAlg.step5
+[       OK ] portAlg.step5 (1 ms)
+[----------] 5 tests from portAlg (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (10 ms total)
+[  PASSED  ] 5 tests.
