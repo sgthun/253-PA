@@ -1,0 +1,80 @@
+#! /bin/bash
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/in/valid1.txt > a.valid1
+echo
+echo "Valid 1:"
+echo
+diff a.valid1 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/out/valid1_out.txt |wc
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/in/valid2.txt > a.valid2
+echo
+echo "Valid 2:"
+echo
+diff a.valid2 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/out/valid2_out.txt |wc
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/in/valid3.txt > a.valid3
+echo
+echo "Valid 3:"
+echo
+diff a.valid3 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/out/valid3_out.txt |wc
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/in/valid4.txt > a.valid4
+echo
+echo "Valid 4:"
+echo
+diff a.valid4 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/out/valid4_out.txt |wc
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/in/invalid1.txt > a.invalid1
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/PA/PA3/PA_3/PA3/Test_Cases/in/invalid2.txt > a.invalid2
+
+echo
+echo "testIn"
+echo
+
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/PA/PA3/PA_3/PA3/testIn > a.testIn
+echo
+echo "diff provided"
+echo
+diff a.testIn testOut |wc
+echo
+
+echo "invalid 1:\n"
+cat ~/cs253/PA/PA3/PA_3/PA3/a.invalid1
+echo "invalid 2:\n"
+cat ~/cs253/PA/PA3/PA_3/PA3/a.invalid2
+
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/TC/in/t1 > a.t1
+
+echo
+echo "t1"
+echo
+diff  a.t1 ~/cs253/TC/out/o1 >a.t1.diff
+wc a.t1.diff
+diff  -y a.t1 ~/cs253/TC/out/o1 >a.y.t1.diff
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/TC/in/t2 > a.t2
+
+echo
+echo "t2"
+echo
+diff  a.t2 ~/cs253/TC/out/o2 >a.t2.diff
+wc a.t2.diff
+diff  -y a.t2 ~/cs253/TC/out/o2 >a.y.t2.diff
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/TC/in/t3 > a.t3
+echo
+echo "t3"
+echo
+
+diff  a.t3 ~/cs253/TC/out/o3 >a.t3.diff
+wc a.t3.diff
+diff  -y a.t3 ~/cs253/TC/out/o3 >a.y.t3.diff
+echo
+echo "t4"
+echo
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/TC/in/t4 > a.t4
+diff  a.t4 ~/cs253/TC/out/o4 >a.t4.diff
+wc a.t4.diff
+diff  -y a.t4 ~/cs253/TC/out/o4 >a.y.t4.diff
+echo
+echo "t5"
+echo
+~/cs253/PA/PA3/PA_3/PA3/./PA4 ~/cs253/TC/in/t5 > a.t5
+diff  a.t5 ~/cs253/TC/out/o5 >a.t5.diff
+wc a.t5.diff
+diff  -y a.t5 ~/cs253/TC/out/o5 >a.y.t5.diff
+
+#rm a.*

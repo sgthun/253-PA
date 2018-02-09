@@ -1,0 +1,3 @@
+#! /bin/bash
+
+time ./PA7 ../../TC/P6/exceptions ../../TC/P6/in/t1 ../../TC/P6/in/t2 ../../TC/P6/in/t3

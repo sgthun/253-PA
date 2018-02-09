@@ -1,0 +1,322 @@
+\hypertarget{class_word_counts}{}\section{Word\+Counts Class Reference}
+\label{class_word_counts}\index{Word\+Counts@{Word\+Counts}}
+
+
+{\ttfamily \#include $<$Word\+Counts.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_word_counts_a8dbf0940fa61399ee96c644785ef5c38}{Word\+Counts} (const \hyperlink{class_replace}{Replace} \&exec)
+\item 
+int \hyperlink{class_word_counts_a235c7c1766ecbe6a4789f6f056752c6c}{scan\+File\+In} (istream \&in\+File)
+\item 
+void \hyperlink{class_word_counts_a0ad45e9548846c64517e76c2ccccdd05}{sort\+List} ()
+\item 
+void \hyperlink{class_word_counts_a01636133516c8adb1107e9602654fc6c}{print\+List} ()
+\item 
+void \hyperlink{class_word_counts_a94b3e97c011259128d23a3a9b8bdcf50}{count\+Words} ()
+\item 
+int \hyperlink{class_word_counts_aca07106cfd817404552854bbbaccd349}{string\+Length} ()
+\item 
+void \hyperlink{class_word_counts_a0e3c620a2c6cbdc95b6f15d21af7441e}{update\+Level\+Info} (const string \&word)
+\item 
+double \hyperlink{class_word_counts_a973557abec8b093a57a048c23b3b35d8}{L} ()
+\item 
+double \hyperlink{class_word_counts_a25c71e34425387c437d58aceca7167a4}{S} ()
+\item 
+double \hyperlink{class_word_counts_a1f6b114ff256e99c7222eccff5ddb84c}{C\+Lindex} ()
+\item 
+void \hyperlink{class_word_counts_a5e4bfc1cdfb59e0243bbd0404b9fc9b0}{implicit\+Sentence} ()
+\begin{DoxyCompactList}\small\item\em Adds one to sentence if there is an implicit Sentence in the file. \end{DoxyCompactList}\item 
+void \hyperlink{class_word_counts_a16a319c8e6d77cf3c56d5e63fc0b88b3}{split\+Add} (string \&word)
+\item 
+void \hyperlink{class_word_counts_adbf0439b0c4b121316417c8f57a2c59e}{add} (string word)
+\item 
+void \hyperlink{class_word_counts_a403b84161c89026a98fe93f4965abc10}{split} (string word)
+\item 
+bool \hyperlink{class_word_counts_a94a625bf72762f6c42e6a0f42a0c7a33}{is\+Alphanum} (string word)
+\item 
+int \hyperlink{class_word_counts_a4d4aa5ef3a804708264f95e2864934b0}{get\+First\+Legal\+Punc\+Index} (string word)
+\item 
+int \hyperlink{class_word_counts_a485f72f278ca6f8156f5488379a83d1e}{get\+First\+Legal\+Alph\+Index} (string word)
+\item 
+bool \hyperlink{class_word_counts_ae1ba379747b777457ad9e0a103193c65}{is\+Alpha\+Char} (char c)
+\item 
+bool \hyperlink{class_word_counts_aaf8065eee6259b08789219146ae5b066}{prop\+Cap} (string word)
+\item 
+bool \hyperlink{class_word_counts_adae2e4cbe9712ea641293c2d6b941edb}{punc\+Only\+E\+OS} (string word)
+\item 
+void \hyperlink{class_word_counts_a755bf8c6d952149447d0b7ee85b08106}{capital\+Fix} ()
+\item 
+void \hyperlink{class_word_counts_ad3f785a53d110a84e555732b6de5492e}{remove\+Cap\+Amb} ()
+\item 
+void \hyperlink{class_word_counts_a224e6e76ffa6a20b0cb38fbc4ecf1954}{check\+Caps} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{class_word}{Word} $>$ \hyperlink{class_word_counts_a4ccb249072e42c130714f34ad3af129e}{word\+List}
+\item 
+vector$<$ string $>$ \hyperlink{class_word_counts_acb4e201ce0332715a658275d2d420779}{string\+List}
+\item 
+vector$<$ int $>$ \hyperlink{class_word_counts_ac3a1d95d035b459dbc0e9a9798112335}{cap\+Checks}
+\item 
+int \hyperlink{class_word_counts_a51250b39ac9e6933d0e00dee01aca54e}{word\+Count}
+\item 
+\hyperlink{class_parse_box}{Parse\+Box} \hyperlink{class_word_counts_a54e5fcbae4ff8d8521749b7e171abf7c}{reg\+Box}
+\item 
+\hyperlink{class_stemmer}{Stemmer} \hyperlink{class_word_counts_a8c6a287541197bdcf1c09153aa335ab9}{stem\+Box}
+\item 
+\hyperlink{class_replace}{Replace} \hyperlink{class_word_counts_aa8db0dbc083698932dc0e4c003689d03}{exception\+Table}
+\item 
+string \hyperlink{class_word_counts_a2adf908b06afde0655ee4430784cde54}{tmp}
+\item 
+string \hyperlink{class_word_counts_ab5292fcb0000dc7e5102d05edbcaea42}{add\+Tmp}
+\item 
+string \hyperlink{class_word_counts_a2642e46ef1143a0659d1a55d8da66990}{cap\+Tmp}
+\item 
+int \hyperlink{class_word_counts_a4756f25044712a62f517451e18227fd5}{letter\+Counter}
+\item 
+int \hyperlink{class_word_counts_a2dcad2ace714ce36d0a3b8ab1edf225c}{word\+Counter}
+\item 
+int \hyperlink{class_word_counts_ae152fd46337b578e77da019ab308d241}{sentence\+Counter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_word_counts_a8dbf0940fa61399ee96c644785ef5c38}\label{class_word_counts_a8dbf0940fa61399ee96c644785ef5c38}} 
+\index{Word\+Counts@{Word\+Counts}!Word\+Counts@{Word\+Counts}}
+\index{Word\+Counts@{Word\+Counts}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{Word\+Counts()}{WordCounts()}}
+{\footnotesize\ttfamily Word\+Counts\+::\+Word\+Counts (\begin{DoxyParamCaption}\item[{const \hyperlink{class_replace}{Replace} \&}]{exec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_word_counts_adbf0439b0c4b121316417c8f57a2c59e}\label{class_word_counts_adbf0439b0c4b121316417c8f57a2c59e}} 
+\index{Word\+Counts@{Word\+Counts}!add@{add}}
+\index{add@{add}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Word\+Counts\+::add (\begin{DoxyParamCaption}\item[{string}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a755bf8c6d952149447d0b7ee85b08106}\label{class_word_counts_a755bf8c6d952149447d0b7ee85b08106}} 
+\index{Word\+Counts@{Word\+Counts}!capital\+Fix@{capital\+Fix}}
+\index{capital\+Fix@{capital\+Fix}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{capital\+Fix()}{capitalFix()}}
+{\footnotesize\ttfamily void Word\+Counts\+::capital\+Fix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a224e6e76ffa6a20b0cb38fbc4ecf1954}\label{class_word_counts_a224e6e76ffa6a20b0cb38fbc4ecf1954}} 
+\index{Word\+Counts@{Word\+Counts}!check\+Caps@{check\+Caps}}
+\index{check\+Caps@{check\+Caps}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{check\+Caps()}{checkCaps()}}
+{\footnotesize\ttfamily void Word\+Counts\+::check\+Caps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a1f6b114ff256e99c7222eccff5ddb84c}\label{class_word_counts_a1f6b114ff256e99c7222eccff5ddb84c}} 
+\index{Word\+Counts@{Word\+Counts}!C\+Lindex@{C\+Lindex}}
+\index{C\+Lindex@{C\+Lindex}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{C\+Lindex()}{CLindex()}}
+{\footnotesize\ttfamily double Word\+Counts\+::\+C\+Lindex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a94b3e97c011259128d23a3a9b8bdcf50}\label{class_word_counts_a94b3e97c011259128d23a3a9b8bdcf50}} 
+\index{Word\+Counts@{Word\+Counts}!count\+Words@{count\+Words}}
+\index{count\+Words@{count\+Words}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{count\+Words()}{countWords()}}
+{\footnotesize\ttfamily void Word\+Counts\+::count\+Words (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a485f72f278ca6f8156f5488379a83d1e}\label{class_word_counts_a485f72f278ca6f8156f5488379a83d1e}} 
+\index{Word\+Counts@{Word\+Counts}!get\+First\+Legal\+Alph\+Index@{get\+First\+Legal\+Alph\+Index}}
+\index{get\+First\+Legal\+Alph\+Index@{get\+First\+Legal\+Alph\+Index}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{get\+First\+Legal\+Alph\+Index()}{getFirstLegalAlphIndex()}}
+{\footnotesize\ttfamily int Word\+Counts\+::get\+First\+Legal\+Alph\+Index (\begin{DoxyParamCaption}\item[{string}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a4d4aa5ef3a804708264f95e2864934b0}\label{class_word_counts_a4d4aa5ef3a804708264f95e2864934b0}} 
+\index{Word\+Counts@{Word\+Counts}!get\+First\+Legal\+Punc\+Index@{get\+First\+Legal\+Punc\+Index}}
+\index{get\+First\+Legal\+Punc\+Index@{get\+First\+Legal\+Punc\+Index}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{get\+First\+Legal\+Punc\+Index()}{getFirstLegalPuncIndex()}}
+{\footnotesize\ttfamily int Word\+Counts\+::get\+First\+Legal\+Punc\+Index (\begin{DoxyParamCaption}\item[{string}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a5e4bfc1cdfb59e0243bbd0404b9fc9b0}\label{class_word_counts_a5e4bfc1cdfb59e0243bbd0404b9fc9b0}} 
+\index{Word\+Counts@{Word\+Counts}!implicit\+Sentence@{implicit\+Sentence}}
+\index{implicit\+Sentence@{implicit\+Sentence}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{implicit\+Sentence()}{implicitSentence()}}
+{\footnotesize\ttfamily void Word\+Counts\+::implicit\+Sentence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds one to sentence if there is an implicit Sentence in the file. 
+
+\begin{DoxyNote}{Note}
+if the file ends in end of sentence token then nothing is changed 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_word_counts_ae1ba379747b777457ad9e0a103193c65}\label{class_word_counts_ae1ba379747b777457ad9e0a103193c65}} 
+\index{Word\+Counts@{Word\+Counts}!is\+Alpha\+Char@{is\+Alpha\+Char}}
+\index{is\+Alpha\+Char@{is\+Alpha\+Char}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{is\+Alpha\+Char()}{isAlphaChar()}}
+{\footnotesize\ttfamily bool Word\+Counts\+::is\+Alpha\+Char (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a94a625bf72762f6c42e6a0f42a0c7a33}\label{class_word_counts_a94a625bf72762f6c42e6a0f42a0c7a33}} 
+\index{Word\+Counts@{Word\+Counts}!is\+Alphanum@{is\+Alphanum}}
+\index{is\+Alphanum@{is\+Alphanum}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{is\+Alphanum()}{isAlphanum()}}
+{\footnotesize\ttfamily bool Word\+Counts\+::is\+Alphanum (\begin{DoxyParamCaption}\item[{string}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a973557abec8b093a57a048c23b3b35d8}\label{class_word_counts_a973557abec8b093a57a048c23b3b35d8}} 
+\index{Word\+Counts@{Word\+Counts}!L@{L}}
+\index{L@{L}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{L()}{L()}}
+{\footnotesize\ttfamily double Word\+Counts\+::L (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a01636133516c8adb1107e9602654fc6c}\label{class_word_counts_a01636133516c8adb1107e9602654fc6c}} 
+\index{Word\+Counts@{Word\+Counts}!print\+List@{print\+List}}
+\index{print\+List@{print\+List}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{print\+List()}{printList()}}
+{\footnotesize\ttfamily void Word\+Counts\+::print\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_aaf8065eee6259b08789219146ae5b066}\label{class_word_counts_aaf8065eee6259b08789219146ae5b066}} 
+\index{Word\+Counts@{Word\+Counts}!prop\+Cap@{prop\+Cap}}
+\index{prop\+Cap@{prop\+Cap}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{prop\+Cap()}{propCap()}}
+{\footnotesize\ttfamily bool Word\+Counts\+::prop\+Cap (\begin{DoxyParamCaption}\item[{string}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_adae2e4cbe9712ea641293c2d6b941edb}\label{class_word_counts_adae2e4cbe9712ea641293c2d6b941edb}} 
+\index{Word\+Counts@{Word\+Counts}!punc\+Only\+E\+OS@{punc\+Only\+E\+OS}}
+\index{punc\+Only\+E\+OS@{punc\+Only\+E\+OS}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{punc\+Only\+E\+O\+S()}{puncOnlyEOS()}}
+{\footnotesize\ttfamily bool Word\+Counts\+::punc\+Only\+E\+OS (\begin{DoxyParamCaption}\item[{string}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_ad3f785a53d110a84e555732b6de5492e}\label{class_word_counts_ad3f785a53d110a84e555732b6de5492e}} 
+\index{Word\+Counts@{Word\+Counts}!remove\+Cap\+Amb@{remove\+Cap\+Amb}}
+\index{remove\+Cap\+Amb@{remove\+Cap\+Amb}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{remove\+Cap\+Amb()}{removeCapAmb()}}
+{\footnotesize\ttfamily void Word\+Counts\+::remove\+Cap\+Amb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a25c71e34425387c437d58aceca7167a4}\label{class_word_counts_a25c71e34425387c437d58aceca7167a4}} 
+\index{Word\+Counts@{Word\+Counts}!S@{S}}
+\index{S@{S}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{S()}{S()}}
+{\footnotesize\ttfamily double Word\+Counts\+::S (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a235c7c1766ecbe6a4789f6f056752c6c}\label{class_word_counts_a235c7c1766ecbe6a4789f6f056752c6c}} 
+\index{Word\+Counts@{Word\+Counts}!scan\+File\+In@{scan\+File\+In}}
+\index{scan\+File\+In@{scan\+File\+In}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{scan\+File\+In()}{scanFileIn()}}
+{\footnotesize\ttfamily int Word\+Counts\+::scan\+File\+In (\begin{DoxyParamCaption}\item[{istream \&}]{in\+File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a0ad45e9548846c64517e76c2ccccdd05}\label{class_word_counts_a0ad45e9548846c64517e76c2ccccdd05}} 
+\index{Word\+Counts@{Word\+Counts}!sort\+List@{sort\+List}}
+\index{sort\+List@{sort\+List}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{sort\+List()}{sortList()}}
+{\footnotesize\ttfamily void Word\+Counts\+::sort\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a403b84161c89026a98fe93f4965abc10}\label{class_word_counts_a403b84161c89026a98fe93f4965abc10}} 
+\index{Word\+Counts@{Word\+Counts}!split@{split}}
+\index{split@{split}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily void Word\+Counts\+::split (\begin{DoxyParamCaption}\item[{string}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a16a319c8e6d77cf3c56d5e63fc0b88b3}\label{class_word_counts_a16a319c8e6d77cf3c56d5e63fc0b88b3}} 
+\index{Word\+Counts@{Word\+Counts}!split\+Add@{split\+Add}}
+\index{split\+Add@{split\+Add}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{split\+Add()}{splitAdd()}}
+{\footnotesize\ttfamily void Word\+Counts\+::split\+Add (\begin{DoxyParamCaption}\item[{string \&}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_aca07106cfd817404552854bbbaccd349}\label{class_word_counts_aca07106cfd817404552854bbbaccd349}} 
+\index{Word\+Counts@{Word\+Counts}!string\+Length@{string\+Length}}
+\index{string\+Length@{string\+Length}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{string\+Length()}{stringLength()}}
+{\footnotesize\ttfamily int Word\+Counts\+::string\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_word_counts_a0e3c620a2c6cbdc95b6f15d21af7441e}\label{class_word_counts_a0e3c620a2c6cbdc95b6f15d21af7441e}} 
+\index{Word\+Counts@{Word\+Counts}!update\+Level\+Info@{update\+Level\+Info}}
+\index{update\+Level\+Info@{update\+Level\+Info}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{update\+Level\+Info()}{updateLevelInfo()}}
+{\footnotesize\ttfamily void Word\+Counts\+::update\+Level\+Info (\begin{DoxyParamCaption}\item[{const string \&}]{word }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_word_counts_ab5292fcb0000dc7e5102d05edbcaea42}\label{class_word_counts_ab5292fcb0000dc7e5102d05edbcaea42}} 
+\index{Word\+Counts@{Word\+Counts}!add\+Tmp@{add\+Tmp}}
+\index{add\+Tmp@{add\+Tmp}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{add\+Tmp}{addTmp}}
+{\footnotesize\ttfamily string Word\+Counts\+::add\+Tmp}
+
+\mbox{\Hypertarget{class_word_counts_ac3a1d95d035b459dbc0e9a9798112335}\label{class_word_counts_ac3a1d95d035b459dbc0e9a9798112335}} 
+\index{Word\+Counts@{Word\+Counts}!cap\+Checks@{cap\+Checks}}
+\index{cap\+Checks@{cap\+Checks}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{cap\+Checks}{capChecks}}
+{\footnotesize\ttfamily vector$<$int$>$ Word\+Counts\+::cap\+Checks}
+
+\mbox{\Hypertarget{class_word_counts_a2642e46ef1143a0659d1a55d8da66990}\label{class_word_counts_a2642e46ef1143a0659d1a55d8da66990}} 
+\index{Word\+Counts@{Word\+Counts}!cap\+Tmp@{cap\+Tmp}}
+\index{cap\+Tmp@{cap\+Tmp}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{cap\+Tmp}{capTmp}}
+{\footnotesize\ttfamily string Word\+Counts\+::cap\+Tmp}
+
+\mbox{\Hypertarget{class_word_counts_aa8db0dbc083698932dc0e4c003689d03}\label{class_word_counts_aa8db0dbc083698932dc0e4c003689d03}} 
+\index{Word\+Counts@{Word\+Counts}!exception\+Table@{exception\+Table}}
+\index{exception\+Table@{exception\+Table}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{exception\+Table}{exceptionTable}}
+{\footnotesize\ttfamily \hyperlink{class_replace}{Replace} Word\+Counts\+::exception\+Table}
+
+\mbox{\Hypertarget{class_word_counts_a4756f25044712a62f517451e18227fd5}\label{class_word_counts_a4756f25044712a62f517451e18227fd5}} 
+\index{Word\+Counts@{Word\+Counts}!letter\+Counter@{letter\+Counter}}
+\index{letter\+Counter@{letter\+Counter}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{letter\+Counter}{letterCounter}}
+{\footnotesize\ttfamily int Word\+Counts\+::letter\+Counter}
+
+\mbox{\Hypertarget{class_word_counts_a54e5fcbae4ff8d8521749b7e171abf7c}\label{class_word_counts_a54e5fcbae4ff8d8521749b7e171abf7c}} 
+\index{Word\+Counts@{Word\+Counts}!reg\+Box@{reg\+Box}}
+\index{reg\+Box@{reg\+Box}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{reg\+Box}{regBox}}
+{\footnotesize\ttfamily \hyperlink{class_parse_box}{Parse\+Box} Word\+Counts\+::reg\+Box}
+
+\mbox{\Hypertarget{class_word_counts_ae152fd46337b578e77da019ab308d241}\label{class_word_counts_ae152fd46337b578e77da019ab308d241}} 
+\index{Word\+Counts@{Word\+Counts}!sentence\+Counter@{sentence\+Counter}}
+\index{sentence\+Counter@{sentence\+Counter}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{sentence\+Counter}{sentenceCounter}}
+{\footnotesize\ttfamily int Word\+Counts\+::sentence\+Counter}
+
+\mbox{\Hypertarget{class_word_counts_a8c6a287541197bdcf1c09153aa335ab9}\label{class_word_counts_a8c6a287541197bdcf1c09153aa335ab9}} 
+\index{Word\+Counts@{Word\+Counts}!stem\+Box@{stem\+Box}}
+\index{stem\+Box@{stem\+Box}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{stem\+Box}{stemBox}}
+{\footnotesize\ttfamily \hyperlink{class_stemmer}{Stemmer} Word\+Counts\+::stem\+Box}
+
+\mbox{\Hypertarget{class_word_counts_acb4e201ce0332715a658275d2d420779}\label{class_word_counts_acb4e201ce0332715a658275d2d420779}} 
+\index{Word\+Counts@{Word\+Counts}!string\+List@{string\+List}}
+\index{string\+List@{string\+List}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{string\+List}{stringList}}
+{\footnotesize\ttfamily vector$<$string$>$ Word\+Counts\+::string\+List}
+
+\mbox{\Hypertarget{class_word_counts_a2adf908b06afde0655ee4430784cde54}\label{class_word_counts_a2adf908b06afde0655ee4430784cde54}} 
+\index{Word\+Counts@{Word\+Counts}!tmp@{tmp}}
+\index{tmp@{tmp}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{tmp}{tmp}}
+{\footnotesize\ttfamily string Word\+Counts\+::tmp}
+
+\mbox{\Hypertarget{class_word_counts_a51250b39ac9e6933d0e00dee01aca54e}\label{class_word_counts_a51250b39ac9e6933d0e00dee01aca54e}} 
+\index{Word\+Counts@{Word\+Counts}!word\+Count@{word\+Count}}
+\index{word\+Count@{word\+Count}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{word\+Count}{wordCount}}
+{\footnotesize\ttfamily int Word\+Counts\+::word\+Count}
+
+\mbox{\Hypertarget{class_word_counts_a2dcad2ace714ce36d0a3b8ab1edf225c}\label{class_word_counts_a2dcad2ace714ce36d0a3b8ab1edf225c}} 
+\index{Word\+Counts@{Word\+Counts}!word\+Counter@{word\+Counter}}
+\index{word\+Counter@{word\+Counter}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{word\+Counter}{wordCounter}}
+{\footnotesize\ttfamily int Word\+Counts\+::word\+Counter}
+
+\mbox{\Hypertarget{class_word_counts_a4ccb249072e42c130714f34ad3af129e}\label{class_word_counts_a4ccb249072e42c130714f34ad3af129e}} 
+\index{Word\+Counts@{Word\+Counts}!word\+List@{word\+List}}
+\index{word\+List@{word\+List}!Word\+Counts@{Word\+Counts}}
+\subsubsection{\texorpdfstring{word\+List}{wordList}}
+{\footnotesize\ttfamily vector$<$\hyperlink{class_word}{Word}$>$ Word\+Counts\+::word\+List}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_word_counts_8h}{Word\+Counts.\+h}\item 
+\hyperlink{_word_counts_8cpp}{Word\+Counts.\+cpp}\end{DoxyCompactItemize}

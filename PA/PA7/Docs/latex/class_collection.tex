@@ -1,0 +1,134 @@
+\hypertarget{class_collection}{}\section{Collection Class Reference}
+\label{class_collection}\index{Collection@{Collection}}
+
+
+{\ttfamily \#include $<$Collection.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_collection_a1f1f84178b666f0cb08d58c362473566}{Collection} (int N)
+\item 
+int \hyperlink{class_collection_a9e83d26623d9125ec37f84be550e2bcd}{add\+Document} (istream \&file\+Name, \hyperlink{class_replace}{Replace} exceptions)
+\item 
+bool \hyperlink{class_collection_a31d244d8b65c7e869ee2855485e830b5}{compare\+Similar} ()
+\item 
+void \hyperlink{class_collection_a2078811e68c0508d0f313e4cc72ab90c}{print\+Similar\+Tbl} ()
+\item 
+double \hyperlink{class_collection_a3fde023d06ce5f5b14a3f3ab084bd7dd}{sim} (\hyperlink{class_word_counts}{Word\+Counts} \&docA, \hyperlink{class_word_counts}{Word\+Counts} \&docB)
+\item 
+double \hyperlink{class_collection_a97bcf6c668c2bb836baf245fcc3abdc2}{T\+F\+I\+DF} (\hyperlink{class_word}{Word} \&word\+In)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_collection_abbd27617121505cf86345cdf9f74d58b}{add\+To\+I\+DF} (const \hyperlink{class_word_counts}{Word\+Counts} \&words)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_collection_ad1eac1bd661969e31c8b195e1efc1051}{Num\+Docs}
+\item 
+double \hyperlink{class_collection_aad698dbd68dbc0031eceadf885bac9ee}{Novern}
+\item 
+int \hyperlink{class_collection_a4fba917ef63c2afab571d6d633900451}{Docs}
+\item 
+map$<$ string, int $>$ \hyperlink{class_collection_a6c88fe997e89b4c063face18eda3906a}{I\+DF}
+\item 
+vector$<$ \hyperlink{class_word_counts}{Word\+Counts} $>$ \hyperlink{class_collection_a33713580ff78f8b306b243a552609a3d}{library}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{class_collection_ae47083f6b3d9bc58d31455855e1f0673}{simularities}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collection_a1f1f84178b666f0cb08d58c362473566}\label{class_collection_a1f1f84178b666f0cb08d58c362473566}} 
+\index{Collection@{Collection}!Collection@{Collection}}
+\index{Collection@{Collection}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{Collection()}{Collection()}}
+{\footnotesize\ttfamily Collection\+::\+Collection (\begin{DoxyParamCaption}\item[{int}]{N = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collection_a9e83d26623d9125ec37f84be550e2bcd}\label{class_collection_a9e83d26623d9125ec37f84be550e2bcd}} 
+\index{Collection@{Collection}!add\+Document@{add\+Document}}
+\index{add\+Document@{add\+Document}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{add\+Document()}{addDocument()}}
+{\footnotesize\ttfamily int Collection\+::add\+Document (\begin{DoxyParamCaption}\item[{istream \&}]{file\+Name,  }\item[{\hyperlink{class_replace}{Replace}}]{exceptions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collection_abbd27617121505cf86345cdf9f74d58b}\label{class_collection_abbd27617121505cf86345cdf9f74d58b}} 
+\index{Collection@{Collection}!add\+To\+I\+DF@{add\+To\+I\+DF}}
+\index{add\+To\+I\+DF@{add\+To\+I\+DF}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{add\+To\+I\+D\+F()}{addToIDF()}}
+{\footnotesize\ttfamily void Collection\+::add\+To\+I\+DF (\begin{DoxyParamCaption}\item[{const \hyperlink{class_word_counts}{Word\+Counts} \&}]{words }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_collection_a31d244d8b65c7e869ee2855485e830b5}\label{class_collection_a31d244d8b65c7e869ee2855485e830b5}} 
+\index{Collection@{Collection}!compare\+Similar@{compare\+Similar}}
+\index{compare\+Similar@{compare\+Similar}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{compare\+Similar()}{compareSimilar()}}
+{\footnotesize\ttfamily bool Collection\+::compare\+Similar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collection_a2078811e68c0508d0f313e4cc72ab90c}\label{class_collection_a2078811e68c0508d0f313e4cc72ab90c}} 
+\index{Collection@{Collection}!print\+Similar\+Tbl@{print\+Similar\+Tbl}}
+\index{print\+Similar\+Tbl@{print\+Similar\+Tbl}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{print\+Similar\+Tbl()}{printSimilarTbl()}}
+{\footnotesize\ttfamily void Collection\+::print\+Similar\+Tbl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collection_a3fde023d06ce5f5b14a3f3ab084bd7dd}\label{class_collection_a3fde023d06ce5f5b14a3f3ab084bd7dd}} 
+\index{Collection@{Collection}!sim@{sim}}
+\index{sim@{sim}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{sim()}{sim()}}
+{\footnotesize\ttfamily double Collection\+::sim (\begin{DoxyParamCaption}\item[{\hyperlink{class_word_counts}{Word\+Counts} \&}]{docA,  }\item[{\hyperlink{class_word_counts}{Word\+Counts} \&}]{docB }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collection_a97bcf6c668c2bb836baf245fcc3abdc2}\label{class_collection_a97bcf6c668c2bb836baf245fcc3abdc2}} 
+\index{Collection@{Collection}!T\+F\+I\+DF@{T\+F\+I\+DF}}
+\index{T\+F\+I\+DF@{T\+F\+I\+DF}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{T\+F\+I\+D\+F()}{TFIDF()}}
+{\footnotesize\ttfamily double Collection\+::\+T\+F\+I\+DF (\begin{DoxyParamCaption}\item[{\hyperlink{class_word}{Word} \&}]{word\+In }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_collection_a4fba917ef63c2afab571d6d633900451}\label{class_collection_a4fba917ef63c2afab571d6d633900451}} 
+\index{Collection@{Collection}!Docs@{Docs}}
+\index{Docs@{Docs}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{Docs}{Docs}}
+{\footnotesize\ttfamily int Collection\+::\+Docs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_collection_a6c88fe997e89b4c063face18eda3906a}\label{class_collection_a6c88fe997e89b4c063face18eda3906a}} 
+\index{Collection@{Collection}!I\+DF@{I\+DF}}
+\index{I\+DF@{I\+DF}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{I\+DF}{IDF}}
+{\footnotesize\ttfamily map$<$string, int$>$ Collection\+::\+I\+DF\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_collection_a33713580ff78f8b306b243a552609a3d}\label{class_collection_a33713580ff78f8b306b243a552609a3d}} 
+\index{Collection@{Collection}!library@{library}}
+\index{library@{library}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{library}{library}}
+{\footnotesize\ttfamily vector$<$\hyperlink{class_word_counts}{Word\+Counts}$>$ Collection\+::library\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_collection_aad698dbd68dbc0031eceadf885bac9ee}\label{class_collection_aad698dbd68dbc0031eceadf885bac9ee}} 
+\index{Collection@{Collection}!Novern@{Novern}}
+\index{Novern@{Novern}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{Novern}{Novern}}
+{\footnotesize\ttfamily double Collection\+::\+Novern\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_collection_ad1eac1bd661969e31c8b195e1efc1051}\label{class_collection_ad1eac1bd661969e31c8b195e1efc1051}} 
+\index{Collection@{Collection}!Num\+Docs@{Num\+Docs}}
+\index{Num\+Docs@{Num\+Docs}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{Num\+Docs}{NumDocs}}
+{\footnotesize\ttfamily int Collection\+::\+Num\+Docs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_collection_ae47083f6b3d9bc58d31455855e1f0673}\label{class_collection_ae47083f6b3d9bc58d31455855e1f0673}} 
+\index{Collection@{Collection}!simularities@{simularities}}
+\index{simularities@{simularities}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{simularities}{simularities}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Collection\+::simularities\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_collection_8h}{Collection.\+h}\item 
+\hyperlink{_collection_8cpp}{Collection.\+cpp}\end{DoxyCompactItemize}

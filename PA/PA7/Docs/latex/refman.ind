@@ -1,0 +1,278 @@
+\begin{theindex}
+
+  \item {add}
+    \subitem {Word\+Counts}, \hyperpage{13}
+  \item {add\+Capital}
+    \subitem {Replace}, \hyperpage{9}
+  \item {add\+Document}
+    \subitem {Collection}, \hyperpage{6}
+  \item {add\+Exceptions}
+    \subitem {Replace}, \hyperpage{9}
+  \item {add\+Tmp}
+    \subitem {Word\+Counts}, \hyperpage{16}
+  \item {add\+To\+I\+DF}
+    \subitem {Collection}, \hyperpage{6}
+
+  \indexspace
+
+  \item {C\+Lindex}
+    \subitem {Word\+Counts}, \hyperpage{13}
+  \item {cap\+Checks}
+    \subitem {Word\+Counts}, \hyperpage{16}
+  \item {cap\+Tmp}
+    \subitem {Word\+Counts}, \hyperpage{17}
+  \item {capital\+Fix}
+    \subitem {Word\+Counts}, \hyperpage{13}
+  \item {check\+Caps}
+    \subitem {Word\+Counts}, \hyperpage{13}
+  \item {Collection}, \hyperpage{5}
+    \subitem {add\+Document}, \hyperpage{6}
+    \subitem {add\+To\+I\+DF}, \hyperpage{6}
+    \subitem {Collection}, \hyperpage{5}
+    \subitem {compare\+Similar}, \hyperpage{6}
+    \subitem {Docs}, \hyperpage{7}
+    \subitem {I\+DF}, \hyperpage{7}
+    \subitem {library}, \hyperpage{7}
+    \subitem {Novern}, \hyperpage{7}
+    \subitem {Num\+Docs}, \hyperpage{7}
+    \subitem {print\+Similar\+Tbl}, \hyperpage{6}
+    \subitem {sim}, \hyperpage{6}
+    \subitem {simularities}, \hyperpage{7}
+    \subitem {T\+F\+I\+DF}, \hyperpage{6}
+  \item {Collection.\+cpp}, \hyperpage{19}
+  \item {Collection.\+h}, \hyperpage{19}
+  \item {compare\+Similar}
+    \subitem {Collection}, \hyperpage{6}
+  \item {contains}
+    \subitem {Replace}, \hyperpage{10}
+  \item {count\+Words}
+    \subitem {Word\+Counts}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Docs}
+    \subitem {Collection}, \hyperpage{7}
+
+  \indexspace
+
+  \item {exception\+Fail}
+    \subitem {main.\+cpp}, \hyperpage{20}
+  \item {exception\+Table}
+    \subitem {Word\+Counts}, \hyperpage{17}
+
+  \indexspace
+
+  \item {file\+Fail}
+    \subitem {main.\+cpp}, \hyperpage{20}
+
+  \indexspace
+
+  \item {get\+Count}
+    \subitem {Word}, \hyperpage{11}
+  \item {get\+First\+Legal\+Alph\+Index}
+    \subitem {Word\+Counts}, \hyperpage{14}
+  \item {get\+First\+Legal\+Punc\+Index}
+    \subitem {Word\+Counts}, \hyperpage{14}
+  \item {get\+Stem}
+    \subitem {Stemmer}, \hyperpage{10}
+  \item {get\+Word}
+    \subitem {Word}, \hyperpage{12}
+
+  \indexspace
+
+  \item {I\+DF}
+    \subitem {Collection}, \hyperpage{7}
+  \item {implicit\+Sentence}
+    \subitem {Word\+Counts}, \hyperpage{14}
+  \item {increment\+Word}
+    \subitem {Word}, \hyperpage{12}
+  \item {is\+Alpha\+Char}
+    \subitem {Word\+Counts}, \hyperpage{14}
+  \item {is\+Alpha\+Num}
+    \subitem {Parse\+Box}, \hyperpage{8}
+  \item {is\+Alphanum}
+    \subitem {Word\+Counts}, \hyperpage{14}
+  \item {is\+Legal}
+    \subitem {Parse\+Box}, \hyperpage{8}
+
+  \indexspace
+
+  \item {L}
+    \subitem {Word\+Counts}, \hyperpage{15}
+  \item {letter\+Counter}
+    \subitem {Word\+Counts}, \hyperpage{17}
+  \item {library}
+    \subitem {Collection}, \hyperpage{7}
+  \item {longest\+Legal\+Index}
+    \subitem {Parse\+Box}, \hyperpage{8}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.\+cpp}, \hyperpage{20}
+  \item {main.\+cpp}, \hyperpage{19}
+    \subitem {exception\+Fail}, \hyperpage{20}
+    \subitem {file\+Fail}, \hyperpage{20}
+    \subitem {main}, \hyperpage{20}
+    \subitem {run\+Collection}, \hyperpage{20}
+    \subitem {run\+Read\+Score}, \hyperpage{20}
+    \subitem {Usage}, \hyperpage{20}
+
+  \indexspace
+
+  \item {Novern}
+    \subitem {Collection}, \hyperpage{7}
+  \item {Num\+Docs}
+    \subitem {Collection}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Parse\+Box}, \hyperpage{8}
+    \subitem {is\+Alpha\+Num}, \hyperpage{8}
+    \subitem {is\+Legal}, \hyperpage{8}
+    \subitem {longest\+Legal\+Index}, \hyperpage{8}
+    \subitem {Parse\+Box}, \hyperpage{8}
+    \subitem {prop\+Cap}, \hyperpage{8}
+    \subitem {punc\+Only\+E\+OS}, \hyperpage{9}
+    \subitem {pure\+Punc\+Check}, \hyperpage{9}
+  \item {Parse\+Box.\+cpp}, \hyperpage{21}
+  \item {Parse\+Box.\+h}, \hyperpage{21}
+  \item {print\+List}
+    \subitem {Word\+Counts}, \hyperpage{15}
+  \item {print\+Similar\+Tbl}
+    \subitem {Collection}, \hyperpage{6}
+  \item {prop\+Cap}
+    \subitem {Parse\+Box}, \hyperpage{8}
+    \subitem {Word\+Counts}, \hyperpage{15}
+  \item {punc\+Only\+E\+OS}
+    \subitem {Parse\+Box}, \hyperpage{9}
+    \subitem {Word\+Counts}, \hyperpage{15}
+  \item {pure\+Punc\+Check}
+    \subitem {Parse\+Box}, \hyperpage{9}
+
+  \indexspace
+
+  \item {reg\+Box}
+    \subitem {Word\+Counts}, \hyperpage{17}
+  \item {remove\+Cap\+Amb}
+    \subitem {Word\+Counts}, \hyperpage{15}
+  \item {Replace}, \hyperpage{9}
+    \subitem {add\+Capital}, \hyperpage{9}
+    \subitem {add\+Exceptions}, \hyperpage{9}
+    \subitem {contains}, \hyperpage{10}
+    \subitem {swap\+String}, \hyperpage{10}
+  \item {Replace.\+cpp}, \hyperpage{21}
+  \item {Replace.\+h}, \hyperpage{21}
+  \item {run\+Collection}
+    \subitem {main.\+cpp}, \hyperpage{20}
+  \item {run\+Read\+Score}
+    \subitem {main.\+cpp}, \hyperpage{20}
+
+  \indexspace
+
+  \item {S}
+    \subitem {Word\+Counts}, \hyperpage{15}
+  \item {scan\+File\+In}
+    \subitem {Word\+Counts}, \hyperpage{15}
+  \item {sentence\+Counter}
+    \subitem {Word\+Counts}, \hyperpage{17}
+  \item {set\+Word}
+    \subitem {Word}, \hyperpage{12}
+  \item {should\+Stem}
+    \subitem {Stemmer}, \hyperpage{11}
+  \item {sim}
+    \subitem {Collection}, \hyperpage{6}
+  \item {simularities}
+    \subitem {Collection}, \hyperpage{7}
+  \item {sort\+List}
+    \subitem {Word\+Counts}, \hyperpage{16}
+  \item {split}
+    \subitem {Word\+Counts}, \hyperpage{16}
+  \item {split\+Add}
+    \subitem {Word\+Counts}, \hyperpage{16}
+  \item {stem\+Box}
+    \subitem {Word\+Counts}, \hyperpage{17}
+  \item {Stemmer}, \hyperpage{10}
+    \subitem {get\+Stem}, \hyperpage{10}
+    \subitem {should\+Stem}, \hyperpage{11}
+    \subitem {Stemmer}, \hyperpage{10}
+  \item {Stemmer.\+cpp}, \hyperpage{22}
+  \item {Stemmer.\+h}, \hyperpage{22}
+  \item {string\+Length}
+    \subitem {Word\+Counts}, \hyperpage{16}
+  \item {string\+List}
+    \subitem {Word\+Counts}, \hyperpage{17}
+  \item {swap\+String}
+    \subitem {Replace}, \hyperpage{10}
+
+  \indexspace
+
+  \item {T\+F\+I\+DF}
+    \subitem {Collection}, \hyperpage{6}
+  \item {tmp}
+    \subitem {Word\+Counts}, \hyperpage{17}
+
+  \indexspace
+
+  \item {update\+Level\+Info}
+    \subitem {Word\+Counts}, \hyperpage{16}
+  \item {Usage}
+    \subitem {main.\+cpp}, \hyperpage{20}
+
+  \indexspace
+
+  \item {Word}, \hyperpage{11}
+    \subitem {get\+Count}, \hyperpage{11}
+    \subitem {get\+Word}, \hyperpage{12}
+    \subitem {increment\+Word}, \hyperpage{12}
+    \subitem {set\+Word}, \hyperpage{12}
+    \subitem {Word}, \hyperpage{11}
+  \item {Word.\+cpp}, \hyperpage{22}
+  \item {Word.\+h}, \hyperpage{22}
+  \item {word\+Count}
+    \subitem {Word\+Counts}, \hyperpage{18}
+  \item {word\+Counter}
+    \subitem {Word\+Counts}, \hyperpage{18}
+  \item {Word\+Counts}, \hyperpage{12}
+    \subitem {add}, \hyperpage{13}
+    \subitem {add\+Tmp}, \hyperpage{16}
+    \subitem {C\+Lindex}, \hyperpage{13}
+    \subitem {cap\+Checks}, \hyperpage{16}
+    \subitem {cap\+Tmp}, \hyperpage{17}
+    \subitem {capital\+Fix}, \hyperpage{13}
+    \subitem {check\+Caps}, \hyperpage{13}
+    \subitem {count\+Words}, \hyperpage{14}
+    \subitem {exception\+Table}, \hyperpage{17}
+    \subitem {get\+First\+Legal\+Alph\+Index}, \hyperpage{14}
+    \subitem {get\+First\+Legal\+Punc\+Index}, \hyperpage{14}
+    \subitem {implicit\+Sentence}, \hyperpage{14}
+    \subitem {is\+Alpha\+Char}, \hyperpage{14}
+    \subitem {is\+Alphanum}, \hyperpage{14}
+    \subitem {L}, \hyperpage{15}
+    \subitem {letter\+Counter}, \hyperpage{17}
+    \subitem {print\+List}, \hyperpage{15}
+    \subitem {prop\+Cap}, \hyperpage{15}
+    \subitem {punc\+Only\+E\+OS}, \hyperpage{15}
+    \subitem {reg\+Box}, \hyperpage{17}
+    \subitem {remove\+Cap\+Amb}, \hyperpage{15}
+    \subitem {S}, \hyperpage{15}
+    \subitem {scan\+File\+In}, \hyperpage{15}
+    \subitem {sentence\+Counter}, \hyperpage{17}
+    \subitem {sort\+List}, \hyperpage{16}
+    \subitem {split}, \hyperpage{16}
+    \subitem {split\+Add}, \hyperpage{16}
+    \subitem {stem\+Box}, \hyperpage{17}
+    \subitem {string\+Length}, \hyperpage{16}
+    \subitem {string\+List}, \hyperpage{17}
+    \subitem {tmp}, \hyperpage{17}
+    \subitem {update\+Level\+Info}, \hyperpage{16}
+    \subitem {word\+Count}, \hyperpage{18}
+    \subitem {word\+Counter}, \hyperpage{18}
+    \subitem {Word\+Counts}, \hyperpage{13}
+    \subitem {word\+List}, \hyperpage{18}
+  \item {Word\+Counts.\+cpp}, \hyperpage{22}
+  \item {Word\+Counts.\+h}, \hyperpage{23}
+  \item {word\+List}
+    \subitem {Word\+Counts}, \hyperpage{18}
+
+\end{theindex}

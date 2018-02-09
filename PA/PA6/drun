@@ -1,0 +1,3 @@
+#! /bin/bash
+
+./PA6 ../../TC/P6/exception* ../../TC/P6/d1 ../../TC/P6/d2 ../../TC/P6/d3 
